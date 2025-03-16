@@ -1,2 +1,2 @@
 # A-form
-Using html,inlinecss.
+Using html,inline css.
