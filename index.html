@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Example</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.form-container {
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #ffffcc;
+}
+
+.form-group {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.form-group label {
+  width: 120px;
+  text-align: left;
+  margin-left:2cqb;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  padding: 10.9px;
+
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.group textarea {
+  resize: vertical;
+  height: 100px; 
+  width: 150px;
+  overflow: scroll;
+ 
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+  height: 10px; 
+  width: 10px;
+}
+
+.form-group .radio-group,
+.form-group .checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-group .radio-group label,
+.form-group .checkbox-group label {
+  width: auto;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.button-group button {
+  padding: 3px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+    border: 1px solid black;
+}
+.group{
+  float: right;
+       
+       width: 30%;
+     height: 120px;
+     flex: auto;
+     padding: 10px;
+     border: 1px solid black;
+     
+  
+}
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  
+  <div class="group">
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </div>
+
+  <div class="form-group">
+    <label for="department">Department:</label>
+    <select id="department" name="department">
+      <option value="">[Select Any Value]</option>
+      <option value="cs">Computer Science</option>
+      <option value="ee">Electrical Engineering</option>
+      <option value="me">Mechanical Engineering</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Gender:</label>
+    <div class="radio-group">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Favourite Subject:</label>
+    <div class="checkbox-group">
+      <input type="checkbox" id="f3026" name="subjects" value="f3026">
+      <label for="f3026">F3026</label>
+      <input type="checkbox" id="f3038" name="subjects" value="f3038">
+      <label for="f3038">F3038</label>
+      <input type="checkbox" id="f4106" name="subjects" value="f4106">
+      <label for="f4106">F4106</label>
+    </div>
+  </div>
+
+
+  <div class="button-group">
+    <button type="submit">Send Information</button>
+    <button type="reset">Clear All</button>
+  </div>
+</div>
+
+</body>
+</html>
